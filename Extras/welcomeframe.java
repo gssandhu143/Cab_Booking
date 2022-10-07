@@ -7,13 +7,12 @@ public class welcomeframe extends javax.swing.JFrame {
     
     public welcomeframe() {
         initComponents();
-        setSize(512,512);
+        setSize(1024,1024);
         setTitle("Welcome Frame");
-        setLocation(100, 100);
+        setLocation(150, 200);
         setVisible(true);
         jLabel3.setBounds(0, 0, 512, 512);
-        
-         jLabel3.setIcon(new ImageIcon("src/photos/pic512.jpg"));
+        jLabel3.setIcon(new ImageIcon("src/photos/pic512.jpg"));
     }
 
     /**
@@ -31,6 +30,7 @@ public class welcomeframe extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
+        jLabel1.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -44,9 +44,9 @@ public class welcomeframe extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(40, 30, 150, 50);
+        jButton1.setBounds(40, 75, 100, 150);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\gupta's\\Documents\\NetBeansProjects\\cabbooking 2\\cabbooking 2\\src\\photos\\user-male-add.png")); // NOI18N
         jButton2.setText("User Login");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -55,12 +55,14 @@ public class welcomeframe extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(280, 30, 140, 50);
+        jButton2.setBounds(280, 130, 140, 350);
         getContentPane().add(jLabel3);
         jLabel3.setBounds(-130, 100, 370, 240);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
+    
+    // </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         AdminLogin obj=new AdminLogin();
