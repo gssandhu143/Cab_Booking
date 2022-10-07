@@ -2,6 +2,21 @@ import java.sql.*;
 
 class DBLoader
 {
+    private DBLoader dbloader;
+    
+    private DBLoader()
+    {
+        
+    }
+    
+    public DBLoader getInstance()
+    {
+        if(dbloader == null)
+            dbloader = new DBLoader();
+        
+        return dbloader;    
+    }
+    
     static ResultSet executeQuery(String sqlstatement)
     {
         try
