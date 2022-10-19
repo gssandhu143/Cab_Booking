@@ -94,7 +94,7 @@ public class userlogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bt1);
-        bt1.setBounds(340, 230, 120, 40);
+        bt1.setBounds(340, 230, 220, 40);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\gupta's\\Documents\\NetBeansProjects\\cabbooking 2\\cabbooking 2\\src\\photos\\signup.png")); // NOI18N
